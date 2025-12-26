@@ -168,7 +168,7 @@ main {
         min-width: 240px;
         position: sticky;
         height: fit-content;
-        top: 110px;
+        top: 140px;
         width: 28%;
     }
 
@@ -1026,7 +1026,7 @@ info-table
     margin-bottom: 1em;
 }
 
-.content .content-head .head-wr {
+.content .content-head .head-inner {
     color: var(--main-color);
     display: flex;
     align-items: center;
@@ -1035,6 +1035,7 @@ info-table
     width: fit-content;
     padding: 0 10px;
     margin-bottom: -2px;
+    margin: 0;
 }
 
 .content .content-head .before-line {

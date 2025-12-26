@@ -2,8 +2,8 @@
 $base = '../..';
 $facility_base ='..';
 require_once $base . '/meta.php';
-require_once $base . '/wp-get-news.php';
-require_once $base . '/wp-get-blog.php';
+//require_once $base . '/wp-get-news.php';
+//require_once $base . '/wp-get-blog.php';
 $title = '上田しいのみ園＿施設紹介';
 $description = '上田しいのみ園は、障害者自立支援法に基づく「障害者支援施設」です。入所支援や生活介護、短期入所を通じて、一人ひとりのペースに寄り添いながら、安心して過ごせる時間を支えています。';
 $local_path = '/facilities/shiinomien/'; // サイトのルートからのパスを記入
@@ -41,10 +41,11 @@ $og_image = 'fv.jpg';
                 しいのみ園の<span class="bp">支援内容</span>
             </p>
         </a></li>
-        <li><a href="#guide" class="btn-1">ご利用案内</a></li>
-        <li><a href="#policy" class="btn-1">運営方針</a></li>
+        <li><a href="#guide" class="btn-1">ご利用の流れ</a></li>
+        <li><a href="#policy" class="btn-1">運営基本方針</a></li>
         <li><a href="#facility" class="btn-1">施設概要</a></li>
         <li><a href="#fees" class="btn-1">ご利用料金</a></li>
+        <li><a href="<?= $base ?>/contact/?from=shiinomien" class="btn-1">お問い合わせ</a></li>
     </ul>
 </div>
 <div class="content">
@@ -88,7 +89,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="news">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>お知らせ</h2>
                 <p class="before-line">しいのみ通信</p>
             </div>
@@ -133,7 +134,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="blog">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>ブログ</h2>
                 <p class="before-line">しいのみ日和</p>
             </div>
@@ -155,7 +156,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="support">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>しいのみ園の支援内容</h2>
             </div>
         </hgroup>
@@ -182,7 +183,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="guide">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>ご利用の流れ</h2>
             </div>
         </hgroup>
@@ -208,7 +209,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="policy">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>運営基本方針</h2>
             </div>
         </hgroup>
@@ -226,7 +227,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="facility">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>施設概要</h2>
             </div>
         </hgroup>
@@ -328,10 +329,11 @@ $og_image = 'fv.jpg';
                 </tr>
             </tbody>
         </table>
+        <a href="<?= $base ?>/contact/?from=shiinomien" class="btn-2">お問い合わせ</a>
     </section>
     <section id="fees">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>ご利用料金</h2>
             </div>
         </hgroup>

@@ -86,11 +86,25 @@ $og_image = 'fv.jpg';
     </section>
     <section id="news">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>お知らせ</h2>
                 <p class="before-line">しいのみ通信</p>
             </div>
         </hgroup>
+        <div class="wp-news wp-content-scroll">
+            <?php include $base . '/wp-news.php' ?>
+        </div>
+        <div class="wp-more">
+            <div class="arrows">
+                <button class="arrow-btn prev">
+                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
+                </button>
+                <button class="arrow-btn next">
+                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
+                </button>
+            </div>
+            <a href="<?= $base ?>/wp/news/" class="btn-2">もっと見る</a>
+        </div>
         <div class="content-inner">
             <img src="muroganosato-1.jpg" alt="">
             <div class="news-wr">
@@ -112,7 +126,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="blog">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>ブログ</h2>
                 <p class="before-line">しいのみ日和</p>
             </div>
@@ -120,7 +134,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="guide">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>室賀の里の支援内容</h2>
             </div>
         </hgroup>
@@ -141,7 +155,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="border">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>入所基準</h2>
             </div>
         </hgroup>
@@ -168,7 +182,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="flow">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>ご利用の流れ</h2>
             </div>
         </hgroup>
@@ -180,25 +194,25 @@ $og_image = 'fv.jpg';
                 <p class="text">
                     ※高齢者全般の相談はこちら
                 </p>
-                <a href="<?= $facility_base ?>/shiinomi/" class="btn-2">川西地域包括センター</a>
+                <a href="<?= $facility_base ?>/chiikihoukatsushien/" class="btn-2">川西地域包括センター</a>
             </div>
             <div class="link-content">
                 <p class="text">
                     ※介護保険・要介護１以上の方の相談はこちら
                 </p>
-                <a href="<?= $facility_base ?>/shiinomi/" class="btn-2">いきいき介護センター</a>
+                <a href="<?= $facility_base ?>/ikiikikaigo" class="btn-2">いきいき介護センター</a>
             </div>
             <div class="link-content">
                 <p class="text">
                     ※福祉全般の相談はこちら
                 </p>
-                <a href="<?= $facility_base ?>/shiinomi/" class="btn-2">かわにし</a>
+                <a href="<?= $facility_base ?>/kawanishi/" class="btn-2">かわにし</a>
             </div>
         </div>
     </section>
     <section id="facility">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>施設概要</h2>
             </div>
         </hgroup>
@@ -303,7 +317,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="fees">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>ご利用料金</h2>
             </div>
         </hgroup>

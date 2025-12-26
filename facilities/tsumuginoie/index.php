@@ -82,11 +82,25 @@ $og_image = 'fv.jpg';
     </section>
     <section id="news">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>お知らせ</h2>
                 <p class="before-line">しいのみ通信</p>
             </div>
         </hgroup>
+        <div class="wp-news wp-content-scroll">
+            <?php include $base . '/wp-news.php' ?>
+        </div>
+        <div class="wp-more">
+            <div class="arrows">
+                <button class="arrow-btn prev">
+                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
+                </button>
+                <button class="arrow-btn next">
+                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
+                </button>
+            </div>
+            <a href="<?= $base ?>/wp/news/" class="btn-2">もっと見る</a>
+        </div>
         <div class="content-inner">
             <div class="news-wr">
                 <h3>
@@ -111,7 +125,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="blog">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>ブログ</h2>
                 <p class="before-line">しいのみ日和</p>
             </div>
@@ -119,7 +133,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="support">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>つむぎの家の支援内容</h2>
             </div>
         </hgroup>
@@ -156,7 +170,7 @@ $og_image = 'fv.jpg';
 
     <section id="five-support">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>日常を支える<br>
                 5つのサポート体制</h2>
             </div>
@@ -199,7 +213,7 @@ $og_image = 'fv.jpg';
 
     <section id="guide">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>ご利用の流れ</h2>
             </div>
         </hgroup>
@@ -225,7 +239,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="policy">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>運営基本方針</h2>
             </div>
         </hgroup>
@@ -243,7 +257,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="facility">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>施設概要</h2>
             </div>
         </hgroup>

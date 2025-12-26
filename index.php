@@ -81,7 +81,7 @@ $og_image = 'fv.jpg';
             <p class="con">
                 上田しいのみ会は、障がいのある方や高齢の方が、地域の中で安心して暮らせるように支援する社会福祉法人です。利用者一人ひとりが笑顔で、自分らしく生きられるように。地域やボランティアの方々と共に、あたたかく開かれた福祉活動を続けています。
             </p>
-            <a href="" class="btn-1">
+            <a href="<?= $base ?>/about/" class="btn-1">
                 <p>上田しいのみ会について</p>
             </a>
         </div>
@@ -97,7 +97,7 @@ $og_image = 'fv.jpg';
         <h3 class="facility-name-head">障害者支援施設</h3>
         <ul class="list">
             <li class="shiinomien">
-                <a href="">
+                <a href="<?= $base ?>/facilities/shiinomien/">
                     <div class="img-wr">
                         <img src="shiinomien.jpg" alt="">
                     </div>
@@ -108,7 +108,7 @@ $og_image = 'fv.jpg';
                 </a>
             </li>
             <li class="tsumuginoie">
-                <a href="">
+                <a href="<?= $base ?>/facilities/tsumuginoie/">
                     <div class="img-wr">
                         <img src="tsumuginoie.jpg" alt="">
                     </div>
@@ -119,7 +119,7 @@ $og_image = 'fv.jpg';
                 </a>
             </li>
             <li class="ryogoen">
-                <a href="">
+                <a href="<?= $base ?>/facilities/ryogoen/">
                     <div class="img-wr">
                         <img src="ryogoen.jpg" alt="">
                     </div>
@@ -130,7 +130,7 @@ $og_image = 'fv.jpg';
                 </a>
             </li>
             <li class="shiinomi">
-                <a href="">
+                <a href="<?= $base ?>/facilities/shiinomi/">
                     <div class="img-wr">
                         <img src="ogp.jpg" alt="">
                     </div>
@@ -146,7 +146,7 @@ $og_image = 'fv.jpg';
         <h3 class="facility-name-head">高齢者福祉施設</h3>
         <ul class="list">
             <li class="muroganosato">
-                <a href="">
+                <a href="<?= $base ?>/facilities/muroganosato/">
                     <div class="img-wr">
                         <img src="muroganosato.jpg" alt="">
                     </div>
@@ -157,7 +157,7 @@ $og_image = 'fv.jpg';
                 </a>
             </li>
             <li class="day-service">
-                <a href="">
+                <a href="<?= $base ?>/facilities/day-service/">
                     <div class="img-wr">
                         <img src="day-service.jpg" alt="">
                     </div>
@@ -168,7 +168,7 @@ $og_image = 'fv.jpg';
                 </a>
             </li>
             <li class="ikiikikaigo">
-                <a href="">
+                <a href="<?= $base ?>/facilities/ikiikikaigo/">
                     <div class="img-wr">
                         <img src="ikiikikaigo.jpg" alt="">
                     </div>
@@ -184,7 +184,7 @@ $og_image = 'fv.jpg';
         <h3 class="facility-name-head">相談</h3>
         <ul class="list">
             <li class="kawanishi">
-                <a href="">
+                <a href="<?= $base ?>/facilities/kawanishi/">
                     <div class="img-wr">
                         <img src="kawanishi.jpg" alt="">
                     </div>
@@ -195,7 +195,7 @@ $og_image = 'fv.jpg';
                 </a>
             </li>
             <li class="chiikihoukatsushien">
-                <a href="">
+                <a href="https://www.shiinomikai.com/khoukatsu/">
                     <div class="img-wr">
                         <img src="chiikihoukatsushien.jpg" alt="">
                     </div>
@@ -236,7 +236,7 @@ $og_image = 'fv.jpg';
                 人を想い、人に寄り添う。その気持ちが、福祉の第一歩です。<br>
                 上田しいのみ会では、障がいのある方や高齢の方が笑顔で暮らせる場所を、地域と共に育てていく仲間を募集しています。
             </p>
-            <a href="" class="btn-1">
+            <a href="<?= $base ?>/recruit/" class="btn-1">
                 <p>採用情報を見る</p>
             </a>
         </div>

@@ -73,11 +73,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-<<<<<<< Updated upstream
     scroll-padding-top: 130px;
-=======
-    scroll-padding-top: 100px;
->>>>>>> Stashed changes
 }
 
 body {
@@ -365,7 +361,6 @@ body a {
     font-weight: 400;
     max-width: 40em;
     font-size: clamp(16px, 3.5vw, 20px);
-<<<<<<< Updated upstream
 }
 
 .facility-name-head {
@@ -383,8 +378,6 @@ body a {
     aspect-ratio: 1 / 1;
     border-radius: 100vh;
     background-color: var(--main-color);
-=======
->>>>>>> Stashed changes
 }
 
 /********************
@@ -397,17 +390,6 @@ header
     right: 0;
     width: 100%;
     z-index: 25;
-<<<<<<< Updated upstream
-
-=======
-    max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 18px;
-    background-color: var(--back-color);
->>>>>>> Stashed changes
 }
 
 .main-scroll {
@@ -419,7 +401,7 @@ header
     text-decoration: none;
 }
 
-.head-wr {
+header .head-wr {
     max-width: var(--mw-1300);
     margin: 0 auto;
     padding: 18px 18px 12px;
@@ -930,19 +912,12 @@ FV
     left: calc(100% - 26px);
     color: var(--main-color);
     background-color: #ffffff;
-<<<<<<< Updated upstream
 }
 
 /*********
 /wp/news/,/wp/category/blog/につながる部分
 *********/
 .wp-contents-list .item {
-=======
-/*********
-/wp/news/につながる部分
-*********/
-.list .item {
->>>>>>> Stashed changes
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -951,7 +926,6 @@ FV
     text-decoration: none;
 }
 
-<<<<<<< Updated upstream
 .wp-contents-list .item .thum-img {
     width: 39%;
 }
@@ -965,27 +939,12 @@ FV
     background-color: var(--main-color, var(--main));
     width: fit-content;
     text-decoration: none;
-=======
-.list .item img {
-    width: 39%;
-}
-
-.list .list-cont-wr {
-    width: 59%;
-}
-
-.list .list-cont-wr .category-name {
-    color: #fff;
-    background-color: var(--main-color, var(--main));
-    width: fit-content;
->>>>>>> Stashed changes
     border-radius: 12px;
     font-size: 14px;
     padding: 2px 8px;
     margin: 0;
 }
 
-<<<<<<< Updated upstream
 .wp-contents-list .wp-inner .date {
     text-align: right;
     color: #9E8473;
@@ -993,21 +952,12 @@ FV
 }
 
 .wp-contents-list .article-title {
-=======
-.list .list-cont-wr .date {
-    color: var(--font-color);
-    margin: 4px 0;
-}
-
-.list .item .list-cont-wr h2.title {
->>>>>>> Stashed changes
     color: var(--font-color);
     text-decoration: underline;
     margin: 4px 0;
     font-size: 20px;
 }
 
-<<<<<<< Updated upstream
 @media(min-width:600px) {
     .wp-contents-list {
         display: flex;
@@ -1103,7 +1053,6 @@ info-table
     color: #ffffff;
     white-space: nowrap;
     border-radius: 6px 6px 0 0;
-    padding: 14px 20px;
     margin-top: 0;
     border-right: 0;
     border-bottom: 0;
@@ -1213,27 +1162,4 @@ info-table
     background-repeat: no-repeat;
     background-size: contain;
     margin: -30px 0 0 -30px;
-=======
-@media(min-width:640px) {
-    .list {
-        display: flex;
-        gap: 36px;
-        max-width: 972px;
-        margin: 0 auto;
-    }
-
-    .list .item {
-        display: block;
-        max-width: 300px;
-    }
-
-    .list .item img {
-        width: 100%;
-        margin-bottom: 16px;
-    }
-
-    .list .list-cont-wr {
-        width: 100%;
-    }
->>>>>>> Stashed changes
 }

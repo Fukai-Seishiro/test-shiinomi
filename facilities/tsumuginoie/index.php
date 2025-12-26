@@ -2,11 +2,9 @@
 $base = '../..';
 $facility_base ='..';
 require_once $base . '/meta.php';
-require_once $base . '/wp-get-news.php';
-require_once $base . '/wp-get-blog.php';
-$title = '上田しいのみ園＿施設紹介';
-$description = '上田しいのみ園は、障害者自立支援法に基づく「障害者支援施設」です。入所支援や生活介護、短期入所を通じて、一人ひとりのペースに寄り添いながら、安心して過ごせる時間を支えています。';
-$local_path = '/facilities/shiinomien/'; // サイトのルートからのパスを記入
+$title = '上田市つむぎの家＿施設紹介';
+$description = '上田市つむぎの家は、重症心身障がい児者のための公設民営の施設です。専門スタッフが医療的ケアや食事、入浴などを支えながら、創作活動や機能訓練、個別・集団での療育を通して、一人ひとりの成長を大切にしています。';
+$local_path = '/facilities/tsumuginoie/'; // サイトのルートからのパスを記入
 $og_image = 'fv.jpg';
 ?>
 <!DOCTYPE html>
@@ -27,24 +25,21 @@ $og_image = 'fv.jpg';
 <meta property="og:image" content="<?= $site_url . $local_path . $og_image ?>">
 <link rel="stylesheet" href="<?= $base ?>/common.css?v=1">
 <link rel="stylesheet" href="<?= $facility_base ?>/fac-low.css?v=1">
+<link rel="stylesheet" href="tsumuginoie.css?v=1">
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
-<body class="shiinomien">
+<body class="tsumuginoie">
 <?php include $base . '/header.php'; ?>
 <main class="navipage">
 <div class="facility-navi">
     <ul class="navi">
         <li><a href="#news" class="btn-1">お知らせ</a></li>
         <li><a href="#blog" class="btn-1">ブログ</a></li>
-        <li><a href="#support" class="btn-1">
-            <p>
-                しいのみ園の<span class="bp">支援内容</span>
-            </p>
-        </a></li>
-        <li><a href="#guide" class="btn-1">ご利用案内</a></li>
+        <li><a href="#support" class="btn-1">つむぎの家の支援内容</a></li>
+        <li><a href="#five-support" class="btn-1">5つのサポート体制</a></li>
+        <li><a href="#guide" class="btn-1">ご利用の流れ</a></li>
         <li><a href="#policy" class="btn-1">運営方針</a></li>
         <li><a href="#facility" class="btn-1">施設概要</a></li>
-        <li><a href="#fees" class="btn-1">ご利用料金</a></li>
     </ul>
 </div>
 <div class="content">
@@ -53,35 +48,34 @@ $og_image = 'fv.jpg';
         <ul class="navi">
             <li><a href="#news" class="btn-1">お知らせ</a></li>
             <li><a href="#blog" class="btn-1">ブログ</a></li>
-            <li><a href="#support" class="btn-1">しいのみ園の支援内容</a></li>
-            <li><a href="#guide" class="btn-1">ご利用案内</a></li>
+            <li><a href="#support" class="btn-1">つむぎの家の支援内容</a></li>
+            <li><a href="#five-support" class="btn-1">5つのサポート体制</a></li>
+            <li><a href="#guide" class="btn-1">ご利用の流れ</a></li>
             <li><a href="#policy" class="btn-1">運営方針</a></li>
             <li><a href="#facility" class="btn-1">施設概要</a></li>
-            <li><a href="#fees" class="btn-1">ご利用料金</a></li>
         </ul>
     </details>
     <section class="outline">
         <div class="inner">
             <hgroup>
                 <p class="disability-support">障害者支援施設</p>
-                <h1>上田しいのみ園</h1>
+                <h1>上田市つむぎの家</h1>
             </hgroup>
             <p class="access">
-                〒386-0034<br>
-                上田市中之条801番地<br>
-                <span class="highlight">TEL</span><a class="call" href="tel:0268-27-3166">:0268-27-3166</a><span class="bp"><span class="highlight">FAX</span>:0268-27-3175</span>
+                〒386-1106<br>
+                上田市小泉1028番地<br>
+                <span class="highlight">TEL</span><a class="call" href="tel:0268-26-1130">:0268-26-1130</a><span class="bp"><span class="highlight">FAX</span>:0268-26-1158</span>
             </p>
         </div>
-        <div class="outline-content" id="main-contents">
+        <div class="outline-content">
             <img src="fv.jpg" alt="" class="fv-image">
             <div class="inner">
                 <h2>
-                    笑顔が咲く、<span class="bp">わたしの居場所。</span>
+                    成長と笑顔を<span class="bp">つむぐ場所。</span>
                 </h2>
                 <p class="text">
-                    上田しいのみ園は、18歳以上の障がいのある方が、自分らしい毎日を過ごすための生活の場です。<br>
-                    入所支援や生活介護、短期入所を通じて、一人ひとりのペースに寄り添いながら、安心して過ごせる時間を支えています。<br>
-                    軽作業や創作活動などに取り組みながら、自然と笑顔が生まれるあたたかな日々がここにあります。
+                    上田市つむぎの家は、重い障がいを持つお子さんや成人の方が、安心して日中を過ごせる活動の場です。 <br>
+                    専門スタッフが医療的ケアや食事、入浴などを支えながら、創作活動や機能訓練、個別・集団での療育を通して、一人ひとりの成長を大切にしています。
                 </p>
             </div>
         </div>
@@ -93,30 +87,16 @@ $og_image = 'fv.jpg';
                 <p class="before-line">しいのみ通信</p>
             </div>
         </hgroup>
-        <div class="wp-news wp-content-scroll">
-            <?php include $base . '/wp-news.php' ?>
-        </div>
-        <div class="wp-more">
-            <div class="arrows">
-                <button class="arrow-btn prev">
-                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
-                </button>
-                <button class="arrow-btn next">
-                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
-                </button>
-            </div>
-            <a href="<?= $base ?>/wp/news/" class="btn-2">もっと見る</a>
-        </div>
         <div class="content-inner">
-            <img src="news.jpg" alt="">
             <div class="news-wr">
-                <h3>みんなで過ごす、あたたかい時間</h3>
+                <h3>
+                    一人ひとりの一日を、<span class="bp">大切につむぐ時間</span>
+                </h3>
                 <p class="text">
-                    朝ごはんを食べたら、ラジオ体操で元気に一日をスタート。<br>
-                    日中は籠作りやプラスチック製品の箱詰め、清拭布たたみなどに取り組みます。<br>
-                    午後はヨガや書道などで自分の時間も楽しみ、笑顔あふれる穏やかな毎日を過ごしています。
+                    朝の挨拶から一日をはじめ、生活リズムの安定や口腔ケアを行います。 <br>
+                    日中は散歩や指先を使った創作活動、季節の行事などに取り組み、笑顔あふれる時間を過ごします。<br>
+                    会話や意思表示も大切にしながら、コミュニケーションの力を少しずつ育んでいます。
                 </p>
-                <button class="btn-2" id="popup-btn">日課を見る</button>
                 <div class="popup-content">
                     <div class="popup-wr">
                         <img src="dairylist.png" alt="" id="dairylist">
@@ -127,8 +107,6 @@ $og_image = 'fv.jpg';
         <div class="images">
             <img src="news-1.jpg" alt="">
             <img src="news-2.jpg" alt="">
-            <img src="news-3.jpg" alt="">
-            <img src="news-4.jpg" alt="">
         </div>
     </section>
     <section id="blog">
@@ -138,48 +116,87 @@ $og_image = 'fv.jpg';
                 <p class="before-line">しいのみ日和</p>
             </div>
         </hgroup>
-        <div class="wp-blog wp-content-scroll">
-            <?php include $base . '/wp-blog.php' ?>
-        </div>
-        <div class="wp-more">
-            <div class="arrows">
-                <button class="arrow-btn prev">
-                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
-                </button>
-                <button class="arrow-btn next">
-                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
-                </button>
-            </div>
-            <a href="<?= $base ?>/wp/category/blog/" class="btn-2">もっと見る</a>
-        </div>
     </section>
     <section id="support">
         <hgroup class="content-head">
             <div class="head-wr">
-                <h2>しいのみ園の支援内容</h2>
+                <h2>つむぎの家の支援内容</h2>
             </div>
         </hgroup>
-        <ol class="content-list">
-            <li>
-                <h3>施設入所支援事業</h3>
-                <p class="text">
-                    主に夜間生活において、入浴、排泄又は食事等の介護、その他の法基準の定める便宜を提供します。
-                </p>
-            </li>
-            <li>
-                <h3>生活介護事業</h3>
-                <p class="text">
-                    主として昼間において、自立した日常生活や社会生活を営むことができるように入浴、排せつ、食事等の介助支援と、生産活動、創作的活動等の機会を提供します。
-                </p>
-            </li>
-            <li>
-                <h3>短期入所事業</h3>
-                <p class="text">
-                    居宅において、その介護を行う方が疾患その他の理由により、短期間の入所利用等を必要とする方に入浴、排せつ、食事等の介護やその他支援の定める便宜を提供します。
-                </p>
-            </li>
-        </ol>
+        <div class="content-wr">
+            <p class="text">
+                ご利用をお考えの方は、在住市町村の福祉窓口および障害者総合支援センター・相談支援事業所「椎の実」にご相談ください。
+            </p>
+            <ol class="content-list">
+                <li>
+                    <h3>生活介護事業</h3>
+                    <p class="text">
+                        （営業日時：月曜日～金曜日の午前9時～午後3時）<br>
+                        18歳以上の重症者が利用できます。
+                    </p>
+                </li>
+                <li>
+                    <h3>放課後等デイサービス事業</h3>
+                    <p class="text">
+                        （月曜日～金曜日の午後3時～午後5時、土曜日の午前9時～午後5時、
+                        <span class="bp">学校の長期休み：月曜日～土曜日の午前9時～午後3時）</span>
+                        <br>養護学校等の重症学童が利用できます。
+                    </p>
+                </li>
+                <li>
+                    <h3>児童発達支援事業</h3>
+                    <p class="text">
+                        （月～金の午前9時～午後3時）<br>
+                        就学前の重症児が利用できます。
+                    </p>
+                </li>
+            </ol>
+        </div>
     </section>
+
+    <section id="five-support">
+        <hgroup class="content-head">
+            <div class="head-wr">
+                <h2>日常を支える<br>
+                5つのサポート体制</h2>
+            </div>
+        </hgroup>
+        <div class="content-wr">
+            <ol class="content-list">
+                <li>
+                    <h3>介護・医療ケア</h3>
+                    <p class="text">
+                        専門スタッフによる手厚いケア体制
+                    </p>
+                </li>
+                <li>
+                    <h3>療育活動</h3>
+                    <p class="text">
+                        個別支援計画に基づいた活動を積極的に支援
+                    </p>
+                </li>
+                <li>
+                    <h3>入浴</h3>
+                    <p class="text">
+                    機械浴、足浴等安全安心な個別浴を提供します
+                    </p>
+                </li>
+                <li>
+                    <h3>昼食</h3>
+                    <p class="text">
+                    ご利用者の特性に合わせた食事を提供します
+                    </p>
+                </li>
+                <li>
+                    <h3>送迎</h3>
+                    <p class="text">
+                    支援員・看護師の2人体制で安全な送迎をします
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
     <section id="guide">
         <hgroup class="content-head">
             <div class="head-wr">
@@ -230,56 +247,55 @@ $og_image = 'fv.jpg';
                 <h2>施設概要</h2>
             </div>
         </hgroup>
-        <img src="shiinomien.jpg" alt="" class="building">
+        <img src="building.jpg" alt="" class="building">
         <table class="info-table">
             <tbody>
                 <tr>
-                    <th>指定事業所名</th>
-                    <td colspan="2">上田しいのみ園</td>
+                    <th>施設名称</th>
+                    <td colspan="2">上田市つむぎの家</td>
                 </tr>
                 <tr>
                     <th>所在地</th>
-                    <td colspan="2">上田市中之条801番地</td>
+                    <td colspan="2">上田市小泉1028番地</td>
                 </tr>
                 <tr>
                     <th>連絡先</th>
-                    <td colspan="2">（TEL）0268-27-3166　（FAX）0268-27-3175</td>
+                    <td colspan="2">（TEL）0268-26-1130　（FAX）0268-26-1158</td>
+                </tr>
+                <tr>
+                    <th>E-mail</th>
+                    <td colspan="2">tsumugi@shiinomikai.com</td>
                 </tr>
                 <tr>
                     <th>指定事業所コード</th>
-                    <td colspan="2">2010300289</td>
-                </tr>
-                <tr>
-                    <th>相談支援事業</th>
-                    <td colspan="2">2030300061</td>
-                </tr>
-                <tr>
-                    <th>事業開始年月日</th>
-                    <td colspan="2">昭和53年4月1日</td>
-                </tr>
-                <tr>
-                    <th>利用定員</th>
                     <td colspan="2">
-                        (施設入所支援)　40名<br>
-                        (生活介護)　40名<br>
-                        (短期入所)　2名
+                        2010300685(生活介護事業) 
+                        2050300090(放課後等デイサービス事業、児童発達支援事業) 
                     </td>
                 </tr>
                 <tr>
+                    <th>事業開始年月日</th>
+                    <td colspan="2">平成24年4月1日</td>
+                </tr>
+                <tr>
+                    <th>利用定員</th>
+                    <td colspan="2">5人</td>
+                </tr>
+                <tr>
                     <th>敷地面積</th>
-                    <td colspan="2">3,423.09㎡</td>
+                    <td colspan="2">2,165㎡</td>
                 </tr>
                 <tr>
                     <th>延床面積</th>
-                    <td colspan="2">1,632.97㎡</td>
+                    <td colspan="2">430.37㎡</td>
                 </tr>
                 <tr>
                     <th>鉄筋平屋建1棟</th>
-                    <td colspan="2">住居棟全床暖房</td>
+                    <td colspan="2">造平屋建一棟、リビング床暖房</td>
                 </tr>
                 <tr>
                     <th>特殊付帯設備</th>
-                    <td colspan="2">暖房設備、居住棟床暖房、スプリンクラーその他ファンコンベクター25台</td>
+                    <td colspan="2">特殊浴槽</td>
                 </tr>
             </tbody>
         </table>
@@ -287,32 +303,32 @@ $og_image = 'fv.jpg';
             <tbody>
                 <tr>
                     <th class="category" rowspan="10">職員体制</th>
-                    <td>施設長</td>
-                    <td>1名</td>
+                    <td>管理者（所長）</td>
+                    <td>1名(常勤)</td>
                 </tr>
                 <tr>
-                    <td>サービス管理責任者</td>
-                    <td>2名（1名兼務）</td>
+                    <td>サービス管理責任者（児童発達支援管理責任者）</td>
+                    <td>1名(常勤)</td>
                 </tr>
                 <tr>
-                    <td>医師</td>
-                    <td>2名（非常勤）</td>
+                    <td>生活支援員（保育士、介護福祉士）</td>
+                    <td>3名(常勤2名、非常勤1名)</td>
                 </tr>
                 <tr>
                     <td>看護師</td>
-                    <td>3名</td>
+                    <td>5名(常勤1名、非常勤3名、他兼務1名) </td>
                 </tr>
                 <tr>
-                    <td>理学療法士</td>
-                    <td>1名</td>
+                    <td>機能訓練指導員（理学療法士、音楽療法士）</td>
+                    <td>3名(非常勤2名、他兼務1名)</td>
                 </tr>
                 <tr>
-                    <td>生活指導員</td>
-                    <td>23名（パート6名含む）（うち介護福祉士16名）</td>
+                    <td>嘱託医</td>
+                    <td>1名(兼務) </td>
                 </tr>
                 <tr>
-                    <td>管理栄養士</td>
-                    <td>1名</td>
+                    <td>事務員</td>
+                    <td>1名(兼務) </td>
                 </tr>
                 <tr>
                     <td>調理師</td>
@@ -323,50 +339,15 @@ $og_image = 'fv.jpg';
                     <td>2名</td>
                 </tr>
                 <tr>
-                    <td>合計</td>
-                    <td>27名</td>
+                    <td>管理栄養士</td>
+                    <td>1名(兼務) </td>
                 </tr>
             </tbody>
         </table>
-    </section>
-    <section id="fees">
-        <hgroup class="content-head">
-            <div class="head-wr">
-                <h2>ご利用料金</h2>
-            </div>
-        </hgroup>
-        <table class="info-table sub-table">
-            <tr>
-                <th rowspan="3">生活費</th>
-                <td>食費</td>
-                <td>1日1,428円</td>
-            </tr>
-            <tr>
-                <td>光熱費</td>
-                <td>1日394円</td>
-            </tr>
-            <tr>
-                <td>その他</td>
-                <td>サービス利用料金の利用者負担額</td>
-            </tr>
-        </table>
-        <table class="info-table">
-            <tbody>
-                <tr>
-                    <th>その他の費用</th>
-                    <td colspan="2">理容料金、医療費、行政手続き等、介護給付費等の給付対象外のサービスを利用した場合は、別途のお支払いになります。</td>
-            </tbody>
-        </table>
-        <p class="way">※お支払方法<p>
-        <p class="way-inner">
-            毎月10日までに前月分の請求を致しますので、当月の20日までにお支払下さい。<br>
-            お支払方法は、現金もしくは銀行振込の中からご契約の際に選べます。受領後は領収書を発行します。
-        </p>
     </section>
 </div>
 </main>
 <?php include $base . '/footer.php'; ?>
 <script src="popup.js"></script>
-<script src="<?= $base ?>/scroll.js"></script>
 </body>
 </html>

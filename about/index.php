@@ -1,7 +1,7 @@
 <?php
 $base = '..';
 require_once $base . '/meta.php';
-require_once $base . '/wp-get-blog.php';
+// require_once $base . '/wp-get-blog.php';
 $title = '上田しいのみ園について';
 $description = '上田しいのみ会の法人理念や沿革、名前の由来などをご紹介します。組織体制や決算報告などの情報開示についても、こちらのページをご覧ください。';
 $local_path = '/about/'; // サイトのルートからのパスを記入

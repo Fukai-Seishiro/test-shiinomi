@@ -74,15 +74,29 @@ $og_image = 'fv.jpg';
     </section>
     <section id="news">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>お知らせ</h2>
                 <p class="before-line">しいのみ通信</p>
             </div>
         </hgroup>
+        <div class="wp-news wp-content-scroll">
+            <?php include $base . '/wp-news.php' ?>
+        </div>
+        <div class="wp-more">
+            <div class="arrows">
+                <button class="arrow-btn prev">
+                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
+                </button>
+                <button class="arrow-btn next">
+                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
+                </button>
+            </div>
+            <a href="<?= $base ?>/wp/news/" class="btn-2">もっと見る</a>
+        </div>
     </section>
     <section id="blog">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>ブログ</h2>
                 <p class="before-line">しいのみ日和</p>
             </div>
@@ -90,7 +104,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="facility">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>施設概要</h2>
             </div>
         </hgroup>

@@ -40,7 +40,7 @@
                     <li><a href="<?= $base ?>/facilities/day-service/" id="foot-day-service">室賀デイサービスセンター</a></li>
                     <li><a href="<?= $base ?>/facilities/ikiikikaigo/" id="foot-ikiikikaigo">いきいき介護センター</a></li>
                     <li><a href="<?= $base ?>/facilities/kawanishi/" id="foot-kawanishi">かわにし</a></li>
-                    <li><a href="https://www.shiinomikai.com/khoukatsu/" target="chiikihoukatsushien"  id="foot-chiikihoukatsushien">地域包括支援センター</a></li>
+                    <li><a href="<?= $base ?>/facilities/chiikihoukatsushien" class="consultation" id="head-chiikihoukatsushien">地域包括支援センター</a></li>
                 </ul>
             </li>
         </ul>

@@ -34,13 +34,13 @@ $og_image = 'fv.jpg';
     <ul class="navi">
         <li><a href="#news" class="btn-1">お知らせ</a></li>
         <li><a href="#blog" class="btn-1">ブログ</a></li>
-        <li><a href="#guide" class="btn-1">
+        <?php /*<li><a href="#guide" class="btn-1">
             <p>
                 いきいき介護センター<span class="bp">の支援内容</span>
             </p>
-        </a></li>
+        </a></li>**/ ?>
         <li><a href="#facility" class="btn-1">施設概要</a></li>
-        <li><a href="#fees" class="btn-1">ご利用料金</a></li>
+        <?php /* <li><a href="#fees" class="btn-1">ご利用料金</a></li> **/ ?>
     </ul>
 </div>
 <div class="content">
@@ -49,13 +49,13 @@ $og_image = 'fv.jpg';
         <ul class="navi">
             <li><a href="#news" class="btn-1">お知らせ</a></li>
             <li><a href="#blog" class="btn-1">ブログ</a></li>
-            <li><a href="#guide" class="btn-1">
+            <?php /*<li><a href="#guide" class="btn-1">
                 <p>
                     いきいき介護センター<span class="bp">の支援内容</span>
                 </p>
-            </a></li>
+            </a></li>*/?>
             <li><a href="#facility" class="btn-1">施設概要</a></li>
-            <li><a href="#fees" class="btn-1">ご利用料金</a></li>
+            <?php /*<li><a href="#fees" class="btn-1">ご利用料金</a></li>*/?>
         </ul>
     </details>
     <section class="outline">
@@ -87,11 +87,25 @@ $og_image = 'fv.jpg';
     </section>
     <section id="news">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>お知らせ</h2>
                 <p class="before-line">しいのみ通信</p>
             </div>
         </hgroup>
+        <div class="wp-news wp-content-scroll">
+            <?php include $base . '/wp-news.php' ?>
+        </div>
+        <div class="wp-more">
+            <div class="arrows">
+                <button class="arrow-btn prev">
+                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
+                </button>
+                <button class="arrow-btn next">
+                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
+                </button>
+            </div>
+            <a href="<?= $base ?>/wp/news/" class="btn-2">もっと見る</a>
+        </div>
         <div class="content-inner">
             <img src="ikiikikaigo-1.jpg" alt="">
             <div class="news-wr">
@@ -105,7 +119,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="blog">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>ブログ</h2>
                 <p class="before-line">しいのみ日和</p>
             </div>
@@ -113,7 +127,7 @@ $og_image = 'fv.jpg';
     </section>
     <section id="facility">
         <hgroup class="content-head">
-            <div class="head-wr">
+            <div class="head-inner">
                 <h2>施設概要</h2>
             </div>
         </hgroup>

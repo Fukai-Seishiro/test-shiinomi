@@ -28,7 +28,7 @@
 }
 
 .info-table tr th.mark {
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     gap: 4px;
 }

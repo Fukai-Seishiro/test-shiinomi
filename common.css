@@ -73,11 +73,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-<<<<<<< Updated upstream
     scroll-padding-top: 130px;
-=======
-    scroll-padding-top: 100px;
->>>>>>> Stashed changes
 }
 
 body {
@@ -200,91 +196,6 @@ main {
     }
 }
 
-.navipage .content {
-    max-width: 880px;
-    flex-grow: 1;
-}
-
-.facility-navi {
-    display: none;
-}
-
-.content details summary {
-    background-color: #9F2A00;
-    color: #fff;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-    padding: 8px 20px;
-}
-
-.content details summary::after {
-    display: block;
-    content: "";
-    background: url(arrow-page-navi.svg) no-repeat;
-    width: 28px;
-    aspect-ratio: 1;
-    background-size: contain;
-}
-
-.content details[open] summary::after {
-    transform: rotate(180deg);
-}
-
-.navi {
-    padding: 4px 0;
-    margin: 0;
-    background-color: #fff;
-    border-radius: 10PX;
-    box-shadow: 0 4px 10px rgba(159,42,0,0.2);
-}
-
-.navi li {
-    list-style: none;
-    margin: 12px;
-    border-bottom: 1px solid #9F2A00;
-    padding: 0 8px 4px;
-}
-
-.navi li .btn-1 {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    margin: 0;
-}
-
-.navi li .btn-1::before {
-    background: url(navi-arrow.svg) no-repeat;
-    background-size: contain;
-    width: clamp(16px, 13%, 24PX);
-}
-
-.navi li .btn-1 p {
-    margin: 0;
-}
-
-@media(min-width:750px){
-    .facility-navi {
-        display: block;
-        max-width: 300px;
-        min-width: 240px;
-        position: sticky;
-        height: fit-content;
-        top: 90px;
-        flex-grow: 1;
-    }
-
-    .content details {
-        display: none;
-    }    
-
-    .navipage {
-        display: flex;
-        gap: 32px;
-    }
-}
-
 body button {
     border: none;
     background-color: unset;
@@ -365,7 +276,6 @@ body a {
     font-weight: 400;
     max-width: 40em;
     font-size: clamp(16px, 3.5vw, 20px);
-<<<<<<< Updated upstream
 }
 
 .facility-name-head {
@@ -383,8 +293,6 @@ body a {
     aspect-ratio: 1 / 1;
     border-radius: 100vh;
     background-color: var(--main-color);
-=======
->>>>>>> Stashed changes
 }
 
 /********************
@@ -397,17 +305,6 @@ header
     right: 0;
     width: 100%;
     z-index: 25;
-<<<<<<< Updated upstream
-
-=======
-    max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 18px;
-    background-color: var(--back-color);
->>>>>>> Stashed changes
 }
 
 .main-scroll {
@@ -593,10 +490,6 @@ header
 }
 
 @media(min-width:768px) {
-    #global-header {
-        padding: 0 20px 6px;
-    }
-
     .hamburger_btn {
         display: none;
     }
@@ -930,19 +823,12 @@ FV
     left: calc(100% - 26px);
     color: var(--main-color);
     background-color: #ffffff;
-<<<<<<< Updated upstream
 }
 
 /*********
 /wp/news/,/wp/category/blog/につながる部分
 *********/
 .wp-contents-list .item {
-=======
-/*********
-/wp/news/につながる部分
-*********/
-.list .item {
->>>>>>> Stashed changes
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -951,7 +837,6 @@ FV
     text-decoration: none;
 }
 
-<<<<<<< Updated upstream
 .wp-contents-list .item .thum-img {
     width: 39%;
 }
@@ -965,27 +850,12 @@ FV
     background-color: var(--main-color, var(--main));
     width: fit-content;
     text-decoration: none;
-=======
-.list .item img {
-    width: 39%;
-}
-
-.list .list-cont-wr {
-    width: 59%;
-}
-
-.list .list-cont-wr .category-name {
-    color: #fff;
-    background-color: var(--main-color, var(--main));
-    width: fit-content;
->>>>>>> Stashed changes
     border-radius: 12px;
     font-size: 14px;
     padding: 2px 8px;
     margin: 0;
 }
 
-<<<<<<< Updated upstream
 .wp-contents-list .wp-inner .date {
     text-align: right;
     color: #9E8473;
@@ -993,21 +863,12 @@ FV
 }
 
 .wp-contents-list .article-title {
-=======
-.list .list-cont-wr .date {
-    color: var(--font-color);
-    margin: 4px 0;
-}
-
-.list .item .list-cont-wr h2.title {
->>>>>>> Stashed changes
     color: var(--font-color);
     text-decoration: underline;
     margin: 4px 0;
     font-size: 20px;
 }
 
-<<<<<<< Updated upstream
 @media(min-width:600px) {
     .wp-contents-list {
         display: flex;
@@ -1213,27 +1074,4 @@ info-table
     background-repeat: no-repeat;
     background-size: contain;
     margin: -30px 0 0 -30px;
-=======
-@media(min-width:640px) {
-    .list {
-        display: flex;
-        gap: 36px;
-        max-width: 972px;
-        margin: 0 auto;
-    }
-
-    .list .item {
-        display: block;
-        max-width: 300px;
-    }
-
-    .list .item img {
-        width: 100%;
-        margin-bottom: 16px;
-    }
-
-    .list .list-cont-wr {
-        width: 100%;
-    }
->>>>>>> Stashed changes
 }

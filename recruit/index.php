@@ -30,13 +30,13 @@ $og_image = '';
 <link rel="stylesheet" href="./recruit.css?v=1">
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
-<body class="shiinomien">
+<body>
 <?php include $base . '/header.php'; ?>
 <main class="navipage">
 <div class="facility-navi">
     <ul class="navi">
-        <li><a href="#news" class="btn-1">お知らせ</a></li>
-        <li><a href="#blog" class="btn-1">ブログ</a></li>
+        <li><a href="#notice" class="btn-1">お知らせ</a></li>
+        <?php /*<li><a href="#blog" class="btn-1">ブログ</a></li>
         <li><a href="#support" class="btn-1">
             <p>
                 しいのみ園の<span class="bp">支援内容</span>
@@ -46,32 +46,58 @@ $og_image = '';
         <li><a href="#policy" class="btn-1">運営方針</a></li>
         <li><a href="#facility" class="btn-1">施設概要</a></li>
         <li><a href="#fees" class="btn-1">ご利用料金</a></li>
+        */ ?>
     </ul>
 </div>
 <div class="content">
     <details>
         <summary>このページの目次を見る</summary>
-        <ul class="navi">
+        <ul class="notice">
             <li><a href="#news" class="btn-1">お知らせ</a></li>
+            <?php /*
             <li><a href="#blog" class="btn-1">ブログ</a></li>
             <li><a href="#support" class="btn-1">しいのみ園の支援内容</a></li>
             <li><a href="#guide" class="btn-1">ご利用案内</a></li>
             <li><a href="#policy" class="btn-1">運営方針</a></li>
             <li><a href="#fasility" class="btn-1">施設概要</a></li>
             <li><a href="#fees" class="btn-1">ご利用料金</a></li>
+            */?>
         </ul>
     </details>
     <section id="notice">
-        <div class="title-wr">
-            <h2>お知らせ</h2>
+        <hgroup class="content-head">
+            <div class="head-inner">
+                <h2>お知らせ</h2>
+                <p class="before-line">しいのみ通信</p>
+            </div>
+        </hgroup>
+        <div class="wp-news wp-content-scroll">
+            <?php include $base . '/wp-news.php' ?>
+        </div>
+        <div class="wp-more">
+            <div class="arrows">
+                <button class="arrow-btn prev">
+                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
+                </button>
+                <button class="arrow-btn next">
+                    <img src="<?= $base ?>/navi-arrow.svg" alt="">
+                </button>
+            </div>
+            <a href="<?= $base ?>/wp/news/" class="btn-2">もっと見る</a>
         </div>
     </section>
     <section id="career">
         <div class="title-wr">
             <h2>研修・キャリアアップ</h2>
         </div>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-        <img src="../fv.jpg" alt="">
+        <p>
+            福祉の仕事に関わる者としての心構えや、介護の基本を再確認するために。<br>
+            また、職場で気持ちよくコミュニケーションを取る方法や楽しく働くための工夫、
+            <br>スキルアップ・キャリアアップにつながる学びの場として、<br>
+            年に2～5回ほど研修を行なっています。<br>
+            こうした取り組みによって、一人ひとりの人間力や組織としての力を高め、チームワークをより深めています。
+        </p>
+        <img src="career-path.png" alt="">
     </section>
     <section id="requirements"></section>
     <section id="question">
@@ -191,8 +217,6 @@ $og_image = '';
 </div>
 </main>
 <?php include $base . '/footer.php'; ?>
-<script src=""></script>
+<script src="<?= $base ?>/scroll.js"></script>
 </body>
 </html>
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3211.419553030385!2d138.22277747639552!3d36.39904327236413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601da2db75d8c807%3A0xe6fd8f7d5ef695d3!2z5LiK55Sw44GX44GE44Gu44G_5ZyS!5e0!3m2!1sja!2sjp!4v1763109110905!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

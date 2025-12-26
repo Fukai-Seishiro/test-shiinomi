@@ -37,7 +37,7 @@
                             <li><a href="<?= $base ?>/facilities/day-service/" class="elderly-care" id="head-day-service">室賀デイサービスセンター</a></li>
                             <li><a href="<?= $base ?>/facilities/ikiikikaigo/" class="elderly-care" id="head-ikiikikaigo">いきいき介護センター</a></li>
                             <li><a href="<?= $base ?>/facilities/kawanishi/" class="consultation" id="head-kawanishi">かわにし</a></li>
-                            <li><a href="https://www.shiinomikai.com/khoukatsu/" target="chiikihoukatsushien" class="consultation" id="head-chiikihoukatsushien">地域包括支援センター</a></li>
+                            <li><a href="<?= $base ?>/facilities/chiikihoukatsushien" class="consultation" id="head-chiikihoukatsushien">地域包括支援センター</a></li>
                         </ul>
                     </div>
                 </li>

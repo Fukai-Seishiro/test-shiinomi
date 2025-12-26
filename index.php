@@ -3,15 +3,9 @@ $base = '.';
 require_once $base . '/meta.php';
 require_once $base . '/wp-get-news.php';
 require_once $base . '/wp-get-blog.php';
-<<<<<<< Updated upstream
 $title = '社会福祉法人 上田しいのみ会｜長野県上田市';
 $description = '上田しいのみ会は、障がいのある方や高齢の方が、地域の中で安心して暮らせるように支援する社会福祉法人です。９つの施設で構成されており、地域やボランティアの方々と共に、あたたかく開かれた福祉活動を続けています。';
 $local_path = '/'; // サイトのルートからのパスを記入
-=======
-$title = '';
-$description = '';
-$local_path = '/';// サイトのルートからのパスを記入
->>>>>>> Stashed changes
 $og_image = 'fv.jpg';
 ?>
 <!DOCTYPE html>
@@ -37,7 +31,6 @@ $og_image = 'fv.jpg';
 <body>
 <?php include $base . '/header.php'; ?>
 <main>
-<<<<<<< Updated upstream
 <section class="slides">
     <div class="catch-wr">
         <p>地域で育つ、福祉の木。</p>
@@ -249,28 +242,6 @@ $og_image = 'fv.jpg';
         </div>
     </div>
 </section>
-=======
-<?php include $base . '/fv.php'; ?>
-<div class="toggle"></div>
-<section class="gallery_con case-main">
-    <h2>しいのみ通信</h2>
-    <p>
-        上田しいのみ会や、各施設からのお知らせをお届けします。
-    </p>
-<?php include $base . '/wp-news.php' ?>
-    <a href="<?= $base ?>/wp/news/" class="btn-1 inversion">もっと見る</a>
-</section>
-
-<section class="gallery_con case-main">
-    <h2>しいのみ日和</h2>
-    <p>
-        『しいのみ日和』は、上田しいのみ会の日々の出来事や、地域の皆さんとのふれあいをお届けするブログです。笑顔あふれる毎日を、少し覗いてみませんか？
-    </p>
-    <a href="<?= $base ?>/wp/category/blog/" class="btn-1 inversion">もっと見る</a>
-<?php include $base . '/wp-blog.php' ?>
-</section>
-
->>>>>>> Stashed changes
 </main>
 <?php include $base . '/footer.php'; ?>
 <script src="./slide.js"></script>
